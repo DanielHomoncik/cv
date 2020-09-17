@@ -1,0 +1,42 @@
+.picture {
+  width: 150px;
+  height: 90px;
+} 
+.icons {
+  width: 40px;
+  height: 40px;
+}
+hr.dashed {
+  border-top: 1px dashed black;
+}
+hr.heading {
+  border: 10px solid green;
+  border-radius: 5px;
+}
+.photo {
+  width: 70%;
+  height: 70%;
+}
+.color {
+  color: white;
+  background-color: #28a745;
+}
+body {
+  position: relative;
+}
+.writes{
+  color:white;
+
+}
+ul.nav-pills {
+  position: fixed;
+}
+
+@media only screen and (max-width:1100px) {
+  ul.nav-pills {
+    position: static;
+  }
+}
+
+
+
