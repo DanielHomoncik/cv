@@ -5,127 +5,155 @@
     <title>Bootstrap Example</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body data-spy="scroll" data-target="#myScrollspy" data-offset="10">
-    <div class=".container-fluid">
-        <div class="row">
-            <div class="col-md-3" id="myScrollspy">
-                <ul class="nav nav-pills nav-stacked color">
-                    <li class="text-center">
-                        <h1>Daniel Homonick</h1>
-                    </li>
-                    <li class="text-center"><img src="/img/DanielHomonick.svg" class="photo" alt="Responsive image"></li>
-                    <li>
-                        <div>
-                        <h2 class="text-center">Kontakt</h2>
-                        <h4> <a class="writes" href="callto:+48505700100"><img src="img/phone.svg" alt="phone icon" class="icons" />
-                                516-797-591</a>
-                            <br>
-                            <a class="writes" href="mailto:kontakt@piotrtrojan.com"> <img src="img/envelope-closed.svg" alt="envelope icon"
-                                    class="icons"> homoncikdan@gmail.com
-                            </a>
-                        </h4>
-                    </li>
-                    <li class="active">
-                    <li><a class="writes text-center" href="#aboutYourself">Kilka słów o mnie</a></li>
-                    <li><a class="writes text-center" href="#education">Wykształcenie</a></li>
-                    <li><a class="writes text-center" href="#experience">Doświadcze</a></li>
-                    <li><a class="writes text-center" href="#technologies">Technologie</a></li>
-                </ul>
-            </div>   
-            <div class="col-md-9">
-                <div id="aboutYourself">
-                    <h1 class="text-center">Kilka słów o mnie</h1>
-                    <p>Hej nazywam się Daniel ...Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec dui. At quis
-                        risus sed vulputate. Morbi tincidunt ornare massa eget. Maecenas sed enim ut sem viverra
-                        aliquet. Sed felis eget velit aliquet sagittis id consectetur purus. Ultrices neque ornare
-                        aenean euismod elementum nisi quis. Eget aliquet nibh praesent tristique. Auctor neque vitae
-                        tempus quam pellentesque nec. Elit ut aliquam purus sit amet luctus. A lacus vestibulum sed arcu
-                        non odio euismod.</p>
-                </div>
-                <hr class="heading">
-                <div id="education">
-                    <h1 class="text-center mb-4">Edukacja</h1>
-                    <div class=".container-fluid">
-                        <div class="row">                         
-                            <div class=" col-md-5 order-md-2">
-                                <p>2016 - 2020</p>
-                            </div>
-                            <div class=" col-md-5 order-md-2">
-                                <strong>Technikum w Zespole Szkół Elektryczno-Mechanicznych, Nowy Sącz</strong><br>
-                                <span>Drugie najlepsze technikum w Polsce w roku 2020 (ranking Perspektywy)</span><br>
-                                <span>Kierunek: technik teleinformatyk</span><br>
-                            </div>
-                        </div>
-                        <hr class="dashed">
-                        <div class="row">
-                            <div class=" col-md-5 order-md-2">
-                                <p>2018</p>
-                            </div>
-                            <div class=" col-md-5 order-md-2">
-                                <span> Kurs wirtualizacji systemów operacyjnych i sieci komputerowych</span><br>
-                            </div>
-                        </div>
+    <div class="sticky-menu text-center" id="myScrollspy">
+        <h1>Daniel Homoncik</h1>
+        <img src="/img/DanielHomoncik.svg" class="photo" alt="Daniel Homoncik">
+        <h2 class="pt-3">Kontakt</h2>
+        <span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" viewBox="0 0 8 8">
+                <path
+                    d="M.19 0c-.11 0-.19.08-.19.19v7.63c0 .11.08.19.19.19h4.63c.11 0 .19-.08.19-.19v-7.63c0-.11-.08-.19-.19-.19h-4.63zm.81 1h3v5h-3v-5zm1.5 5.5c.28 0 .5.22.5.5s-.22.5-.5.5-.5-.22-.5-.5.22-.5.5-.5z"
+                    transform="translate(1)" />
+            </svg>
+            <a href="callto:+48516797591">516-797-591</a><br>
+        </span>
+        <span>
+            <svg class="mail-icon" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                viewBox="0 0 8 8">
+                <path d="M0 0v1l4 2 4-2v-1h-8zm0 2v4h8v-4l-4 2-4-2z" transform="translate(0 1)" />
+            </svg>
+            <a href="mailto:homoncikdan@gmail.com">homoncikdan@gmail.com</a><br>
+        </span>
+        <ul class="nav nav-pills nav-stacked ">
+            <li><a href="#aboutYourself">Kilka słów o mnie</a></li>
+            <li><a href="#education">Wykształcenie</a></li>
+            <li><a href="#experience">Doświadcze</a></li>
+            <li><a href="#technologies">Technologie</a></li>
+        </ul>
+    </div>
+    <div class="content nav-pills">
+        <div id="aboutYourself">
+            <h1>Kilka słów o mnie</h1>
+            <p>Hej nazywam się Daniel ...Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec dui. At quis
+                risus sed vulputate. Morbi tincidunt ornare massa eget. Maecenas sed enim ut sem viverra
+                aliquet. Sed felis eget velit aliquet sagittis id consectetur purus. Ultrices neque ornare
+                aenean euismod elementum nisi quis. Eget aliquet nibh praesent tristique. Auctor neque vitae
+                tempus quam pellentesque nec. Elit ut aliquam purus sit amet luctus. A lacus vestibulum sed arcu
+                non odio euismod.</p>
+        </div>
+        <hr class="heading">
+        <div id="education">
+            <h1 class="mb-4">Edukacja</h1>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class=" col-md-5 order-md-2">
+                        <p>2016 - 2020</p>
+                    </div>
+                    <div class=" col-md-5 order-md-2">
+                        <strong>Technikum w Zespole Szkół Elektryczno-Mechanicznych, Nowy Sącz</strong><br>
+                        <span>Drugie najlepsze technikum w Polsce w roku 2020 (ranking Perspektywy)</span><br>
+                        <span>Kierunek: technik teleinformatyk</span><br>
                     </div>
                 </div>
-                <hr class="heading">
-                <div id="experience">
-                    <h1 class="text-center mb-4">Doświadczenie</h1>
-                    <div class=".container-fluid">
-                        <div class="row">  
-                            <div class=" col-md-5 order-md-2">
-                                <p>2019 - 2020</p>
+                <hr class="dashed">
+                <div class="row">
+                    <div class=" col-md-5 order-md-2">
+                        <p>2018</p>
+                    </div>
+                    <div class=" col-md-11 order-md-2">
+                        <span> Kurs wirtualizacji systemów operacyjnych i sieci komputerowych</span><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="heading">
+        <div id="experience">
+            <h1 class="mb-4">Doświadczenie</h1>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class=" col-md-5 order-md-2">
+                        <p>2019 - 2020</p>
+                    </div>
+                    <div class=" col-md-5 order-md-2">
+                        <strong>Staż w firmie Smart brain Labs Piotr Trojan</strong><br>
+                        <span>Staż w ramach projektu mającego na celu utworzenie kompetencji zawodowych
+                        </span>
+                        <span>Cas odbycia stażu to 150h
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="heading">
+        <div id="technologies">
+            <h1 class="mb-4">Technologie</h1>
+            <div class="col-md">
+                <div class="row">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col-sm-5 text-center ">
+                                <svg class="picture" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="32" height="32"
+                                    viewBox="0 0 32 32">
+                                    <path fill="#444"
+                                        d="M15.937 11.355l-2.057 4.879h4.433l-2.358-4.924-.019.044zm.027-7.055L4.685 8.269l1.782 14.777 9.508 5.226 9.557-5.297 1.782-14.776L15.963 4.3zm4.78 17.549l-1.531-3.545h-6.25l-1.398 3.497-2.601.048 6.973-15.513 7.216 15.513h-2.41z">
+                                    </path>
+                                </svg>
+                                <p>Angular</p>
                             </div>
-                            <div class=" col-md-5 order-md-2">
-                                    <strong>Staż w firmie Smart brain Labs Piotr Trojan</strong><br>
-                                    <span>Staż w ramach projektu mającego na celu utworzenie kompetencji zawodowych
-                                    </span>      
-                                    <span>Cas odbycia stażu to 150h
-                                    </span>
+                            <div class="col-sm-5 text-center ">
+                                <img src="img/html.svg" alt="html" class="picture">
+                                <p>Html</p>
+                            </div>
+                            <div class="col-sm-5 text-center">
+
+                                <img src="img/css.svg" alt="Css" class="picture">
+                                <p>Css</p>
+                            </div>
+                            <div class="col-sm-5 text-center">
+                                <svg class="picture" xmlns="http://www.w3.org/2000/svg" id="OutLine"
+                                    viewBox="0 0 512 512" width="512" height="512">
+                                    <path
+                                        d="M349.657,18.343A8,8,0,0,0,344,16H120A56.063,56.063,0,0,0,64,72V440a56.063,56.063,0,0,0,56,56H392a56.063,56.063,0,0,0,56-56V120a8,8,0,0,0-2.343-5.657ZM352,43.313,420.687,112H392a40.045,40.045,0,0,1-40-40ZM120,32H336V72a56.063,56.063,0,0,0,56,56h40V352H80V72A40.045,40.045,0,0,1,120,32ZM392,480H120a40.045,40.045,0,0,1-40-40V368H432v72A40.045,40.045,0,0,1,392,480Z" />
+                                    <path
+                                        d="M240,384a8,8,0,0,0-8,8v48a8,8,0,0,1-16,0,8,8,0,0,0-16,0,24,24,0,0,0,48,0V392A8,8,0,0,0,240,384Z" />
+                                    <path
+                                        d="M288,400h16a8,8,0,0,0,0-16H288a24,24,0,0,0,0,48,8,8,0,0,1,0,16H272a8,8,0,0,0,0,16h16a24,24,0,0,0,0-48,8,8,0,0,1,0-16Z" />
+                                    <circle cx="288" cy="216" r="8" />
+                                    <circle cx="224" cy="216" r="8" />
+                                    <circle cx="256" cy="216" r="8" />
+                                    <path
+                                        d="M152,224a8.009,8.009,0,0,1,8,8v32a24.028,24.028,0,0,0,24,24,8,8,0,0,0,0-16,8.009,8.009,0,0,1-8-8V232a23.9,23.9,0,0,0-6.126-16A23.9,23.9,0,0,0,176,200V168a8.009,8.009,0,0,1,8-8,8,8,0,0,0,0-16,24.028,24.028,0,0,0-24,24v32a8.009,8.009,0,0,1-8,8,8,8,0,0,0,0,16Z" />
+                                    <path
+                                        d="M336,264a8.009,8.009,0,0,1-8,8,8,8,0,0,0,0,16,24.028,24.028,0,0,0,24-24V232a8.009,8.009,0,0,1,8-8,8,8,0,0,0,0-16,8.009,8.009,0,0,1-8-8V168a24.028,24.028,0,0,0-24-24,8,8,0,0,0,0,16,8.009,8.009,0,0,1,8,8v32a23.9,23.9,0,0,0,6.126,16A23.9,23.9,0,0,0,336,232Z" />
+                                </svg>
+                                <p>JavaScripts</p>
                             </div>
                         </div>
-                    </div>          
-                </div>
-                <hr class="heading">
-                <div id="technologies">
-                    <h1 class="text-center mb-4">Technologie</h1>
-                    <div class="col-md">
                         <div class="row">
-                            <div class="col">
-                                <div class="row">
-                                    <div class="col-md-5 text-center ">
-                                        <img src="img/angular.svg" alt="Angular" class="picture">
-                                        <p>Angular</p>
-                                    </div>
-                                    <div class="col-md-5 text-center ">
-                                        <img src="img/html.svg" alt="html" class="picture">
-                                        <p>Html</p>
-                                    </div>
-                                    <div class="col-md-5 text-center">
-                                        <img src="img/css.svg" alt="Css" class="picture">
-                                        <p>Css</p>
-                                    </div>
-                                    <div class="col-md-5 text-center">
-                                        <img src="img/JavaScript.svg" alt="JavaScript" class="picture">
-                                        <p>JavaScripts</p>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-5 text-center">
-                                        <img src="img/bootstrap.svg" alt="Bootstrap" class="picture">
-                                        <p>Bootstrap</p>
-                                    </div>
-                                    <div class="col-md-5 text-center">
-                                        <img src="img/typescript.svg" alt="Typescript" class="picture">
-                                        <p>Typescript</p>
-                                    </div>
-                                </div>
+                            <div class="col-sm-5 text-center">
+                                <img src="img/bootstrap.svg" alt="Bootstrap" class="picture">
+                                <p>Bootstrap</p>
+                            </div>
+                            <div class="col-sm-5 text-center">
+                                <img src="img/typescript.svg" alt="Typescript" class="picture">
+                                <p>Typescript</p>
                             </div>
                         </div>
                     </div>
