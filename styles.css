@@ -6,7 +6,7 @@
   height: 100vh;
   background-color: #1d3557;
   color: #a8dadc;
-  padding-top: 40px;
+  padding-top: 25px;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -17,7 +17,6 @@
   transition: 0.5s;
 }
 .sticky-menu a:hover {
-  left: 50px;
   color: #e63946;
   text-decoration: none;
 }
@@ -32,10 +31,10 @@
   width: 200px;
   padding: 0 auto;
 }
-
 .picture {
   width: 150px;
   height: 90px;
+  fill: #1d3557;
 }
 
 ul.nav-pills {
@@ -59,4 +58,7 @@ ul.nav-pills {
     background-color: #f1faee;
     color: #1d3557;
   }
+}
+hr{
+border-top:3px solid;
 }
